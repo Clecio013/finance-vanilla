@@ -12,3 +12,10 @@ jobs:
       - run:
           name: Run tests
           command: yarn test
+  deploy:
+    docker:
+      - image: circleci/node:10
+    steps:
+      - run:
+          name: Deploy to netlify
+          command: curl -X POST -d {} https://api.netlify.com/build_hooks/5fde79532c063c1d6914dec1
