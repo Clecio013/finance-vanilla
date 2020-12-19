@@ -12,3 +12,22 @@ jobs:
       - run:
           name: Run tests
           command: yarn test
+  deploy:
+    docker:
+      - image: circleci/node:10
+    steps:
+      - run:
+          name: Deploy to netlify
+          command: curl -X POST -d {} ${NETLIFY_HOOK}
+
+workflows:
+  version: 2
+  build-test-and-deploy:
+    jobs:
+      - build
+      - deploy:
+          filters:
+            branches:
+              only: main
+          requires:
+            - build
