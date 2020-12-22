@@ -1,14 +1,17 @@
+import { render, createTransaction, transactions, $ } from './scripts/transaction';
+import './scripts/header';
 import './assets/style/main.scss';
 
-export const $ = element => document.querySelector(element);
+const form = $('form');
 
 window.addEventListener('load', () => {
-  const menu = $('.header__menu')
-  const close = $('.header__close')
-  const headerDrawer = $('.header__drawer')
+  if (transactions.length > 0) {
+    render.transactions(transactions);
+  }
+});
 
-  const toggleMenu = () => headerDrawer.classList.toggle('active');
+form.addEventListener('submit', event => {
+  event.preventDefault();
 
-  menu.onclick = () => toggleMenu();
-  close.onclick = () => toggleMenu();
-})
+  createTransaction();
+});
