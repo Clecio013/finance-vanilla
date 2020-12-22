@@ -7,12 +7,15 @@
     "start": "webpack serve --hot --mode development",
     "build": "webpack --mode development",
     "test": "jest",
-    "test:watch": "jest --watch"
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
   },
   "devDependencies": {
     "@babel/core": "^7.12.10",
     "@babel/preset-env": "^7.12.11",
     "@testing-library/dom": "^7.29.0",
+    "@testing-library/jest-dom": "^5.11.6",
+    "@testing-library/user-event": "^12.6.0",
     "babel-jest": "^26.6.3",
     "babel-loader": "^8.2.2",
     "css-loader": "^5.0.1",
