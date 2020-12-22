@@ -24,6 +24,36 @@
 
       <img class="header__menu" src="/src/assets/images/menu.svg" alt="Menu">
     </header>
+
+    <section class="transactions">
+      <article class="transactions__form">
+        <h1 class="transactions__title">Nova transação</h1>
+
+        <form class="form">
+          <div class="form__group">
+            <label class="form__label">Tipo de transação</label>
+            <select name="type" id="type" class="form__input" required>
+              <option value="Compra">Compra</option>
+              <option value="Venda">Venda</option>
+            </select>
+          </div>
+
+          <div class="form__group">
+            <label for="name" class="form__label">Nome da mercadoria</label>
+            <input id="name" name="name" type="text" required class="form__input" placeholder="Input">
+          </div>
+
+          <div class="form__group">
+            <label for="value" class="form__label">Valor</label>
+            <input name="value" id="value" type="number" required class="form__input" placeholder="R$ 0,00">
+          </div>
+
+          <div class="form__group">
+            <button class="form__button">Adicionar transação</button>
+          </div>
+        </form>
+      </article>
+    </section>
   </main>
 </body>
 </html>
