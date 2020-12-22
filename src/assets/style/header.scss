@@ -1,8 +1,15 @@
+.header-container {
+  width: 100%;
+  background-color: #ebebeb;
+}
+
 .header {
   position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-width: 1332px;
+  margin: 0 auto;
   background-color: #ebebeb;
   padding: 14px;
 
@@ -55,6 +62,7 @@
 
   .header__nav {
     list-style: none;
+    padding: 14px 8px;
 
     > li {
       padding: 14px;
@@ -70,7 +78,7 @@
 
       > li {
         border-left: 1px solid #000;
-        padding: 6px 14px;
+        padding: 0 18px;
 
         &:first-of-type {
           border-left: none;
