@@ -1,0 +1,46 @@
+.transactions {
+  display: grid;
+  padding-top: 32px;
+
+  @media (min-width: 1132px) {
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 16px;
+  }
+
+  .transactions__title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+
+  .transactions__form {
+    padding: 14px;
+    border: 1px solid #000;
+    border-radius: 4px;
+  }
+
+  .form {
+    .form__group {
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 22px;
+    }
+
+    .form__label {
+      padding-bottom: 6px;
+    }
+
+    .form__button {
+      background-color: #333;
+      color: #fff;
+      border: 0;
+      padding: 8px;
+      border-radius: 4px;
+    }
+
+    .form__input {
+      padding: 8px;
+    }
+  }
+}
