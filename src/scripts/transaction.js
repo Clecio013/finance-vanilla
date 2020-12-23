@@ -49,6 +49,9 @@ export const createTransaction = () => {
 
   render.tr(transaction);
   render.createTotal(transactions);
+
+  name.value = ''
+  value.value = ''
 };
 
 export const getTransactionsTotal = transactions => {
