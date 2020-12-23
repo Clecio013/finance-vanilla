@@ -6,7 +6,8 @@ module.exports = {
   entry: path.resolve(__dirname, 'src', 'app.js'),
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'bundle.js'
+    filename: 'bundle.js',
+    publicPath: '/dist/'
   },
   plugins: [
     new HtmlWebpackPlugin({
@@ -47,5 +48,9 @@ module.exports = {
         ],
       },
     ]
+  },
+  devServer: {
+    publicPath: "/dist/", // here's the change
+    contentBase: path.join(__dirname, 'dist')
   }
 }
