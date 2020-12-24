@@ -1,5 +1,8 @@
-import { render, createTransaction, transactions, $ } from './scripts/transaction';
+import { $ } from './utils/selector'
+import { createTransaction, transactions } from './scripts/transaction';
+import render from './scripts/render'
 import './scripts/header';
+
 import './assets/style/main.scss';
 
 const form = $('form');
@@ -13,5 +16,18 @@ window.addEventListener('load', () => {
 form.addEventListener('submit', event => {
   event.preventDefault();
 
-  createTransaction();
+  const name = $('#name');
+  const value = $('#value');
+  const type = $('#type');
+
+  const transaction = {
+    name: name.value,
+    type: type.options[type.selectedIndex].text,
+    value: Number(value.value)
+  };
+
+  createTransaction(transaction);
+
+  render.tr(transaction);
+  render.createTotal(transactions);
 });
