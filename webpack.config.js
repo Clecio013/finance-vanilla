@@ -40,11 +40,10 @@ module.exports = {
       },
       {
         test: /\.(png|jpe?g|gif|svg)$/i,
-        use: [
-          {
-            loader: 'file-loader',
-          },
-        ],
+        loader: 'file-loader',
+        options: {
+          publicPath: path.resolve(__dirname, 'src', 'assets', 'images'),
+        }
       },
     ]
   }
