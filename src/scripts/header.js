@@ -1,4 +1,4 @@
-import { $ } from './transaction';
+import { $ } from '../utils/selector'
 
 const navigation = $('.header__nav');
 const menu = $('.header__menu');
