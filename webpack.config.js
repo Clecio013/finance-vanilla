@@ -39,12 +39,12 @@ module.exports = {
         ],
       },
       {
-        test: /\.(png|jpe?g|gif|svg)$/i,
+        test: /\.(jpe?g|png|gif|svg)$/i,
         loader: 'file-loader',
         options: {
-          publicPath: path.resolve(__dirname, 'src', 'assets', 'images'),
-        }
+          name: 'assets/images/[name].[ext]',
+        },
       },
     ]
-  }
+  },
 }
