@@ -1,0 +1,21 @@
+.transactions {
+  display: grid;
+  grid-gap: $finance-spacing-internal-07;
+  padding-top: $finance-spacing-internal-07;
+  max-width: 1900px;
+  margin: 0 auto;
+  padding: $finance-spacing-internal-07 $finance-spacing-internal-05 0 $finance-spacing-internal-05;
+
+  @media (min-width: 1900px) {
+    grid-template-columns: 1fr 2fr;
+    grid-gap: $finance-font-base;
+  }
+
+  .transactions__title {
+    font-size: 1.2rem;
+    font-weight: $finance-weight-bold;
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+}
+

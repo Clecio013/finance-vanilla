@@ -1,19 +1,29 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" itemscope itemtype="https://schema.org/WebSite">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Finance Vanilla | Um app para controlar suas transações financeiras">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Clécio de Almeida">
+  <meta name="keywords" content="Finanças, Controle Financeiro, Contas, Dívidas, Despesas">
+  <link rel="canonical" href="http://finance-vanilla.netlify.app">
+  <!-- Sctructured data -->
+  <meta itemprop="name" content="Finance Vanilla">
+  <meta itemprop="description" content="Finance Vanilla | Um app para controlar suas transações financeiras">
+  <meta itemprop="image" content="/src/assets/images/logo.svg">
+  <meta itemprop="url" content="http://finance-vanilla.netlify.app">
   <title>Finance Vanilla</title>
 </head>
 <body>
   <div class="header-container">
     <header class="header">
-      <img class="header__logo" src="/src/assets/images/logo.svg" alt="Logo">
+      <img class="header__logo" src="/src/assets/images/logo.svg" title="Logo" alt="Logo">
 
       <h1>Controle financeiro</h1>
 
       <div class="header__drawer">
-        <img class="header__close" src="/src/assets/images/close.svg" alt="Fechar menu">
+        <img class="header__close" src="/src/assets/images/close.svg" title="Fechar menu" alt="Fechar menu">
         <nav class="header__nav">
           <li>Dashboard</li>
           <li>Resumo</li>
@@ -21,7 +31,7 @@
         </nav>
       </div>
 
-      <img class="header__menu" src="/src/assets/images/menu.svg" alt="Menu">
+      <img class="header__menu" src="/src/assets/images/menu.svg" title="Menu" alt="Menu">
     </header>
   </div>
 
@@ -55,13 +65,13 @@
         </form>
       </article>
 
-      <article class="extract">
-        <h1 class="extract__title">Extrato de transações</h1>
+      <article class="extract" itemscope itemtype="https://schema.org/Invoice">
+        <h1 class="extract__title" itemprop="description">Extrato de transações</h1>
 
-        <table class="extract__table">
+        <table class="extract__table" itemscope itemtype="https://schema.org/PriceSpecification">
           <thead class="extract__thead">
             <tr>
-              <th> Mercadoria</th>
+              <th>Mercadoria</th>
               <th>Valor</th>
             </tr>
           </thead>

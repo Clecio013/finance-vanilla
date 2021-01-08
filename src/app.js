@@ -3,7 +3,7 @@ import { createTransaction, transactions } from './scripts/transaction';
 import render from './scripts/render'
 import './scripts/header';
 
-import './assets/style/main.scss';
+import './assets/scss/main.scss';
 
 const form = $('form');
 
@@ -30,4 +30,7 @@ form.addEventListener('submit', event => {
 
   render.tr(transaction);
   render.createTotal(transactions);
+
+  name.value = null
+  value.value = null
 });

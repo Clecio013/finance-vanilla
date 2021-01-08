@@ -1,6 +1,6 @@
 import { $ } from '../utils/selector'
 
-const navigation = $('.header__nav');
+const navigation = $('.header__drawer');
 const menu = $('.header__menu');
 const close = $('.header__close');
 

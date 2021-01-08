@@ -1,6 +1,6 @@
 .header-container {
   width: 100%;
-  background-color: #ebebeb;
+  background-color: $finance-color-grey;
 }
 
 .header {
@@ -8,11 +8,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1332px;
+  max-width: 1900px;
   margin: 0 auto;
-  background-color: #ebebeb;
-  padding: 14px;
-
+  background-color: $finance-color-grey;
+  padding: $finance-spacing-internal-05;
 
   .header__drawer {
     display: none;
@@ -20,22 +19,22 @@
     top: 0;
     right: 0;
     height: 100vh;
-    background-color: #333;
-    color: #fff;
+    background-color: $finance-color-dark;
+    color: $finance-color-light;
     min-width: 200px;
 
     &.active {
       display: block;
     }
 
-    @media (min-width: 1132px) {
+    @media (min-width: 1900px) {
       display: flex;
       position: initial;
       top: initial;
       right: initial;
       height: initial;
-      background-color: #fff;
-      color: #333;
+      background-color: $finance-color-light;
+      color: $finance-color-dark;
       width: fit-content;
     }
   }
@@ -43,7 +42,7 @@
   .header__menu {
     cursor: pointer;
 
-    @media (min-width: 1132px) {
+    @media (min-width: 1900px) {
       display: none;
     }
   }
@@ -51,34 +50,34 @@
   .header__close {
     width: 30px;
     height: 30px;
-    color: #fff;
+    color: $finance-color-light;
     cursor: pointer;
-    margin: 14px 14px 0;
+    margin: $finance-spacing-internal-05 $finance-spacing-internal-05 0;
 
-    @media (min-width: 1132px) {
+    @media (min-width: 1900px) {
       display: none;
     }
   }
 
   .header__nav {
     list-style: none;
-    padding: 14px 8px;
+    padding: $finance-spacing-internal-05 0;
 
     > li {
-      padding: 14px;
+      padding: $finance-spacing-internal-05;
 
       &:hover {
-        background-color: #fff;
-        color: #333;
+        background-color: $finance-color-light;
+        color: $finance-color-dark;
       }
     }
 
-    @media (min-width: 1132px) {
+    @media (min-width: 1900px) {
       display: flex;
 
       > li {
-        border-left: 1px solid #000;
-        padding: 0 18px;
+        border-left: 1px solid $finance-color-dark-secondary;
+        padding: 0 $finance-spacing-internal-05;
 
         &:first-of-type {
           border-left: none;
@@ -87,7 +86,7 @@
     }
   }
 
-  @media (min-width: 1132px) {
+  @media (min-width: 1900px) {
     display: grid;
     grid-template-columns: 0.1fr 2.5fr auto;
   }

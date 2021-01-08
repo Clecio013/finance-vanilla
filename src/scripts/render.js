@@ -4,7 +4,7 @@ import { getTransactionsTotal } from './transaction'
 
 const tbody = $('.extract__tbody');
 const result = $('#total');
-const profitOrLoss = $('#profitOrLoss')
+const profitOrLoss = $('#profitOrLoss');
 
 const render = {
   tr: transaction => {
@@ -14,10 +14,10 @@ const render = {
       <tr>
         <td>
           ${transaction.type === 'Compra' ? '+' : '-'}
-          ${transaction.name}
+          <span itemprop='name'>${transaction.name}</span>
         </td>
 
-        <td>
+        <td class='value' itemprop='price'>
           ${transformToReal(transaction.value)}
         </td>
       </tr>

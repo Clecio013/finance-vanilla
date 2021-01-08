@@ -1,0 +1,48 @@
+.extract__title {
+  font-size: 1.2rem;
+  font-weight: $finance-weight-bold;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.extract__table {
+  width: 100%;
+  border-collapse: collapse;
+
+  th {
+    text-align: right;
+
+    &:first-of-type {
+      text-align: left;
+    }
+  }
+
+  td, th {
+    border-bottom: 1px solid $finance-color-dark-secondary;
+    padding: $finance-spacing-internal-03;
+  }
+
+  .extract__thead {
+    font-weight: $finance-weight-bold;
+  }
+
+  .value {
+    text-align: right;
+  }
+}
+
+.extract__total {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+
+.extract__tfoot--bold {
+  font-weight: $finance-weight-bold;
+}
+
+.extract__tfoot {
+  td, th {
+    border-bottom: 0;
+  }
+}
