@@ -30,4 +30,7 @@ form.addEventListener('submit', event => {
 
   render.tr(transaction);
   render.createTotal(transactions);
+
+  name.value = null
+  value.value = null
 });
