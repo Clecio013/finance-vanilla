@@ -1,5 +1,5 @@
 <div align="center">
-    <img alt="Controle Financeiro" src=".github/finance-control.png" width="250px" />
+    <img alt="Controle Financeiro" src=".github/mockup.jpg" width="100%" />
 </div>
 
 ## 👨🏽‍💻 About the project
