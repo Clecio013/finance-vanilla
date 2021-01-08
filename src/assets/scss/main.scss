@@ -6,10 +6,10 @@
 @import 'base/global';
 @import 'base/fonts';
 
-// components
-@import 'components/extract';
-@import 'components/form';
-@import 'components/header';
+// layout
+@import 'layout/extract';
+@import 'layout/form';
+@import 'layout/header';
 
 // pages
 @import 'pages/index';
