@@ -17,7 +17,7 @@ const render = {
           ${transaction.name}
         </td>
 
-        <td>
+        <td class='value'>
           ${transformToReal(transaction.value)}
         </td>
       </tr>

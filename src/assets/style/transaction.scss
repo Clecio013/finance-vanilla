@@ -2,11 +2,11 @@
   display: grid;
   grid-gap: 32px;
   padding-top: 32px;
-  max-width: 1332px;
+  max-width: 1900px;
   margin: 0 auto;
   padding: 32px 14px 0 14px;
 
-  @media (min-width: 1132px) {
+  @media (min-width: 1900px) {
     grid-template-columns: 1fr 2fr;
     grid-gap: 16px;
   }
@@ -29,6 +29,14 @@
       display: flex;
       flex-direction: column;
       padding-bottom: 22px;
+
+      @media screen and (min-width: 1024) and (max-width: 1200px) {
+        &:last-child {
+          grid-area: 2 / 2 / 3/ 4;
+          max-width: 40%;
+          margin-left: 75%;
+        }
+      }
     }
 
     .form__label {
@@ -45,6 +53,12 @@
 
     .form__input {
       padding: 8px;
+    }
+
+    @media screen and (min-width: 1024) and (max-width: 1200px) {
+      display: grid;
+      grid-template-columns: 0.2fr 1fr 0.2fr;
+      grid-column-gap: 18px;
     }
   }
 }
@@ -76,6 +90,10 @@
 
     .extract__thead {
       font-weight: 600;
+    }
+
+    .value {
+      text-align: right;
     }
   }
 
