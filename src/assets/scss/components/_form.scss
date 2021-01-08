@@ -1,0 +1,43 @@
+.transactions__form {
+  padding: $finance-spacing-internal-05;
+  border: 1px solid $finance-color-dark-secondary;
+  border-radius: $finance-radius-01;
+}
+
+.form {
+  .form__group {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: $finance-spacing-internal-06;
+
+    @media screen and (min-width: 1024) and (max-width: 1200px) {
+      &:last-child {
+        grid-area: 2 / 2 / 3/ 4;
+        max-width: 40%;
+        margin-left: 75%;
+      }
+    }
+  }
+
+  .form__label {
+    padding-bottom: $finance-spacing-internal-03;
+  }
+
+  .form__button {
+    background-color: $finance-color-dark;
+    color: $finance-color-light;
+    border: 0;
+    padding: $finance-spacing-internal-03;
+    border-radius: $finance-radius-01;
+  }
+
+  .form__input {
+    padding: $finance-spacing-internal-03;
+  }
+
+  @media screen and (min-width: 1024) and (max-width: 1200px) {
+    display: grid;
+    grid-template-columns: 0.2fr 1fr 0.2fr;
+    grid-column-gap: $finance-spacing-internal-05;
+  }
+}

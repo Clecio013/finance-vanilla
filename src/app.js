@@ -3,7 +3,7 @@ import { createTransaction, transactions } from './scripts/transaction';
 import render from './scripts/render'
 import './scripts/header';
 
-import './assets/style/main.scss';
+import './assets/scss/main.scss';
 
 const form = $('form');
 
