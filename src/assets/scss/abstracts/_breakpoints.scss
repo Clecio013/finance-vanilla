@@ -1,0 +1,21 @@
+$breakpoints: (
+  'medium': (min-width: $finance-breakpoint-medium),
+  'large': (min-width: $finance-breakpoint-large)
+);
+
+/// Responsive Manager
+/// @access public
+/// @param {String} $breakpoint - Breakpoint
+/// @requires $breakpoints
+@mixin breakpoint($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media #{inspect(map-get($breakpoints, $breakpoint))} {
+      @content;
+    }
+  }
+
+  @else {
+    @error 'No value found for `#{$breakpoint}`. '
+      + 'Please make sure it is defined in `$breakpoints` map.';
+  }
+}

@@ -10,7 +10,7 @@
     flex-direction: column;
     padding-bottom: $finance-spacing-internal-06;
 
-    @media screen and (min-width: 1024) and (max-width: 1200px) {
+    @media screen and (min-width: $finance-breakpoint-medium) and (max-width: $finance-breakpoint-large) {
       &:last-child {
         grid-area: 2 / 2 / 3/ 4;
         max-width: 40%;
@@ -35,9 +35,9 @@
     padding: $finance-spacing-internal-03;
   }
 
-  @media screen and (min-width: 1024) and (max-width: 1200px) {
+  @media screen and (min-width: $finance-breakpoint-medium) and (max-width: $finance-breakpoint-large) {
     display: grid;
-    grid-template-columns: 0.2fr 1fr 0.2fr;
+    grid-template-columns: 0.4fr 1fr 0.4fr;
     grid-column-gap: $finance-spacing-internal-05;
   }
 }

@@ -8,7 +8,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1900px;
+  max-width: $finance-layout-width;
   margin: 0 auto;
   background-color: $finance-color-grey;
   padding: $finance-spacing-internal-05;
@@ -27,7 +27,7 @@
       display: block;
     }
 
-    @media (min-width: 1900px) {
+    @include breakpoint('medium') {
       display: flex;
       position: initial;
       top: initial;
@@ -42,7 +42,7 @@
   .header__menu {
     cursor: pointer;
 
-    @media (min-width: 1900px) {
+    @include breakpoint('medium') {
       display: none;
     }
   }
@@ -54,7 +54,7 @@
     cursor: pointer;
     margin: $finance-spacing-internal-05 $finance-spacing-internal-05 0;
 
-    @media (min-width: 1900px) {
+    @include breakpoint('medium') {
       display: none;
     }
   }
@@ -72,7 +72,7 @@
       }
     }
 
-    @media (min-width: 1900px) {
+    @include breakpoint('medium') {
       display: flex;
 
       > li {
@@ -86,7 +86,7 @@
     }
   }
 
-  @media (min-width: 1900px) {
+  @include breakpoint('medium') {
     display: grid;
     grid-template-columns: 0.1fr 2.5fr auto;
   }

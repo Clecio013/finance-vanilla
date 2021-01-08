@@ -1,3 +1,6 @@
+// helpers
+$finance-layout-width: 1100px;
+
 // fonts
 $finance-font-base: 16px;
 
@@ -12,9 +15,8 @@ $finance-color-light: #fff;
 $finance-color-grey: #ebebeb;
 
 // breakpoints
-$finance-breakpoint-medium: 800px;
-$finance-breakpoint-large: 800px;
-$finance-breakpoint-huge: 800px;
+$finance-breakpoint-medium: 768px;
+$finance-breakpoint-large: 1024px;
 
 // spacing
 $finance-spacing-internal-01: 0.125rem;
