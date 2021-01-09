@@ -21,18 +21,18 @@
     <header class="header">
       <img class="header__logo" src="/src/assets/images/logo.svg" title="Logo" alt="Logo">
 
-      <h1>Controle financeiro</h1>
+      <h1 class="header__title">Controle financeiro</h1>
 
       <div class="header__drawer">
-        <img class="header__close" src="/src/assets/images/close.png" title="Fechar menu" alt="Fechar menu">
+        <img class="header__close" src="/src/assets/images/close.svg" title="Fechar menu" alt="Fechar menu">
         <nav class="header__nav">
-          <li>Dashboard</li>
-          <li>Resumo</li>
-          <li>Configurações</li>
+          <li class="dashboard">Dashboard</li>
+          <li class="resume">Resumo</li>
+          <li class="settings">Configurações</li>
         </nav>
       </div>
 
-      <img class="header__menu" src="/src/assets/images/menu.png" title="Menu" alt="Menu">
+      <img class="header__menu" src="/src/assets/images/menu.svg" title="Menu" alt="Menu">
     </header>
   </div>
 
@@ -60,7 +60,7 @@
             <input name="value" id="value" type="number" required class="form__input" placeholder="R$ 0,00">
           </div>
 
-          <div class="form__group">
+          <div class="form__group button">
             <button class="form__button">Adicionar transação</button>
           </div>
         </form>
@@ -72,13 +72,14 @@
         <table class="extract__table" itemscope itemtype="https://schema.org/PriceSpecification">
           <thead class="extract__thead">
             <tr>
+              <th></th>
               <th>Mercadoria</th>
               <th>Valor</th>
             </tr>
           </thead>
-          <tbody class="extract__tbody">
-          </tbody>
+          <tbody class="extract__tbody"></tbody>
           <tfoot class="extract__tfoot">
+            <td></td>
             <td class="extract__tfoot--bold">Total</td>
             <td class="extract__total">
               <span id="total" class="extract__tfoot--bold">
