@@ -13,6 +13,16 @@
   background-color: $finance-color-grey;
   padding: $finance-spacing-internal-05;
 
+  .header__logo {
+    @include breakpoint('large') {
+      padding-right: $finance-spacing-internal-05;
+    }
+  }
+
+  .header__title {
+    font-size: 1.3rem;
+  }
+
   .header__drawer {
     display: none;
     position: absolute;
@@ -27,7 +37,7 @@
       display: block;
     }
 
-    @include breakpoint('medium') {
+    @include breakpoint('large') {
       display: flex;
       position: initial;
       top: initial;
@@ -42,29 +52,41 @@
   .header__menu {
     cursor: pointer;
 
-    @include breakpoint('medium') {
+    @include breakpoint('large') {
       display: none;
     }
   }
 
   .header__close {
-    width: 30px;
-    height: 30px;
+    width: 16px;
+    height: 16px;
     color: $finance-color-light;
     cursor: pointer;
-    margin: $finance-spacing-internal-05 $finance-spacing-internal-05 0;
+    margin: $finance-spacing-internal-06 $finance-spacing-internal-06 0;
 
-    @include breakpoint('medium') {
+    @include breakpoint('large') {
       display: none;
     }
   }
 
   .header__nav {
+    display: flex;
+    flex-direction: column;
     list-style: none;
     padding: $finance-spacing-internal-05 0;
 
+    > .dashboard {
+      order: 2;
+    }
+
+    > .settings {
+      order: 3;
+    }
+
     > li {
-      padding: $finance-spacing-internal-05;
+      text-align: right;
+      padding: $finance-spacing-internal-03;
+      margin: $finance-spacing-internal-02 0;
 
       &:hover {
         background-color: $finance-color-light;
@@ -72,8 +94,17 @@
       }
     }
 
-    @include breakpoint('medium') {
-      display: flex;
+    @include breakpoint('large') {
+      flex-direction: row;
+      padding: 0.6rem 0.4rem;
+
+      > .dashboard {
+        order: initial;
+      }
+
+      > .settings {
+        order: initial;
+      }
 
       > li {
         border-left: 1px solid $finance-color-dark-secondary;
@@ -86,7 +117,7 @@
     }
   }
 
-  @include breakpoint('medium') {
+  @include breakpoint('large') {
     display: grid;
     grid-template-columns: 0.1fr 2.5fr auto;
   }

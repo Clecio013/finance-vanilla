@@ -1,7 +1,7 @@
 {
   "name": "finance-vanilla",
   "version": "1.0.0",
-  "main": "src/index.js",
+  "main": "src/app.js",
   "license": "MIT",
   "scripts": {
     "start": "webpack serve --hot --mode development",

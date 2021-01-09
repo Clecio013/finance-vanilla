@@ -1,20 +1,18 @@
-.transactions__form {
-  padding: $finance-spacing-internal-05;
-  border: 1px solid $finance-color-dark-secondary;
-  border-radius: $finance-radius-01;
-}
-
 .form {
   .form__group {
     display: flex;
     flex-direction: column;
     padding-bottom: $finance-spacing-internal-06;
 
+    &.button {
+      padding-bottom: $finance-spacing-internal-02;
+    }
+
     @media screen and (min-width: $finance-breakpoint-medium) and (max-width: $finance-breakpoint-large) {
       &:last-child {
         grid-area: 2 / 2 / 3/ 4;
-        max-width: 40%;
-        margin-left: 75%;
+        max-width: 60%;
+        margin-left: 60%;
       }
     }
   }
@@ -32,7 +30,10 @@
   }
 
   .form__input {
-    padding: $finance-spacing-internal-03;
+    font-family: 'Lato';
+    color: #757575;
+    font-size: 14px;
+    padding: 0.5rem;
   }
 
   @media screen and (min-width: $finance-breakpoint-medium) and (max-width: $finance-breakpoint-large) {

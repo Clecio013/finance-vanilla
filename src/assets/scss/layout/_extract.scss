@@ -1,3 +1,13 @@
+.extract {
+  padding-top: $finance-spacing-internal-06;
+
+  @include breakpoint('medium') {
+    border: 0;
+    padding: 0;
+    padding-top: $finance-spacing-internal-07;
+  }
+}
+
 .extract__title {
   font-size: 1.2rem;
   font-weight: $finance-weight-bold;
@@ -5,21 +15,35 @@
   padding-bottom: $finance-spacing-internal-05;
 }
 
+.extract__tbody {
+  .incomeOutcome {
+    text-align: center;
+  }
+}
+
 .extract__table {
   width: 100%;
   border-collapse: collapse;
 
   th {
-    text-align: right;
+    text-align: center;
 
-    &:first-of-type {
+    &:nth-child(2) {
       text-align: left;
+    }
+
+    @include breakpoint('medium') {
+      text-align: right;
     }
   }
 
   td, th {
     border-bottom: 1px solid $finance-color-dark-secondary;
     padding: $finance-spacing-internal-03;
+
+    &:last-of-type {
+      padding-right: $finance-spacing-internal-05;
+    }
   }
 
   .extract__thead {
@@ -35,6 +59,7 @@
   display: flex;
   flex-direction: column;
   text-align: right;
+
 }
 
 .extract__tfoot--bold {
@@ -45,4 +70,9 @@
   td, th {
     border-bottom: 0;
   }
+}
+
+#profitOrLoss {
+  font-size: 0.8755rem;
+  padding-top: 4px;
 }
