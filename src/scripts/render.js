@@ -12,8 +12,8 @@ const render = {
 
     const line = `
       <tr>
+        <td class='incomeOutcome'>${transaction.type === 'Venda' ? '+' : '-'}</td>
         <td>
-          ${transaction.type === 'Compra' ? '+' : '-'}
           <span itemprop='name'>${transaction.name}</span>
         </td>
 
