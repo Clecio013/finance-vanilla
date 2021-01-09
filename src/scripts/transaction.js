@@ -9,10 +9,10 @@ export const getTransactionsTotal = transactions => {
   const { income, outcome } = transactions.reduce(
     (accumulator, transaction) => {
       switch (transaction.type) {
-      case 'Venda':
+      case 'Compra':
         accumulator.outcome += Number(transaction.value);
         break;
-      case 'Compra':
+      case 'Venda':
         accumulator.income += Number(transaction.value);
         break;
       default:

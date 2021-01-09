@@ -31,7 +31,7 @@ describe('Transaction', () => {
       value: 14
     }]
 
-    expect(getTransactionsTotal(allTransactions)).toBe(-2)
+    expect(getTransactionsTotal(allTransactions)).toBe(2)
   })
 
   it('Shoud return an empty array if dont have item into localstorage', () => {
