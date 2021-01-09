@@ -11,6 +11,9 @@ Technologies I used to create this project
 
 * HTML
 * CSS
+* Structured Data
+* Netlify
+* Circle CI
 * Javascript
 * Webpack
 * babel
