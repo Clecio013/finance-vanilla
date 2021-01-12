@@ -31,7 +31,7 @@
 
     @include breakpoint('medium') {
       display: block;
-      padding: $finance-spacing-internal-04 0 $finance-spacing-internal-06 0
+      padding: $finance-spacing-internal-04 0 $finance-spacing-internal-06 0;
     }
   }
 

@@ -67,6 +67,9 @@
 }
 
 .extract__tfoot {
+  &::before {
+    border: 1px solid #000;
+  }
   td, th {
     border-bottom: 0;
   }
