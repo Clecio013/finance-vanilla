@@ -1,9 +1,9 @@
-.header-container {
+.header {
   width: 100%;
   background-color: $finance-color-grey;
 }
 
-.header {
+.header__content {
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -21,6 +21,7 @@
 
   .header__title {
     font-size: 1.3rem;
+    color: $finance-color-dark;
   }
 
   .header__drawer {

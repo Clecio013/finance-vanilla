@@ -17,8 +17,8 @@
   <title>Finance Vanilla</title>
 </head>
 <body>
-  <div class="header-container">
-    <header class="header">
+  <div class="header">
+    <header class="header__content">
       <img class="header__logo" src="assets/images/logo.svg" title="Logo" alt="Logo">
 
       <h1 class="header__title">Controle financeiro</h1>
@@ -43,9 +43,9 @@
 
         <form class="form">
           <div class="form__group">
-            <label class="form__label">Tipo de transação</label>
+            <label for="type" class="form__label">Tipo de transação</label>
             <select name="type" id="type" class="form__input" required>
-              <option value="Compra" selected>Compra</option>
+              <option value="Compra">Compra</option>
               <option value="Venda">Venda</option>
             </select>
           </div>

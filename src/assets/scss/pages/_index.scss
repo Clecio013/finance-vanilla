@@ -12,11 +12,11 @@
 
   .transactions__form {
     padding: $finance-spacing-internal-06 0;
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid $finance-color-dark-secondary;
 
     @include breakpoint('medium') {
       border-radius: $finance-radius-01;
-      border: 1px solid $finance-color-dark-secondary;
+      border: 1px solid $finance-color-grey-light;
       padding: $finance-spacing-internal-05;
     }
   }
@@ -33,11 +33,6 @@
       display: block;
       padding: $finance-spacing-internal-04 0 $finance-spacing-internal-06 0;
     }
-  }
-
-  .transactions__line {
-    background-color: #000;
-    height: 1px;
   }
 
   @include breakpoint('medium') {
