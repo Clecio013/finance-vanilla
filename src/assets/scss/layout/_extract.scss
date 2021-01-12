@@ -70,6 +70,10 @@
 }
 
 .extract__tfoot {
+  tr {
+    border-top: 4px double $finance-color-grey-light;
+  }
+
   td, th {
     border-bottom: 0;
   }
