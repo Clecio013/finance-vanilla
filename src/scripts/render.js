@@ -1,5 +1,5 @@
 import { transformToReal } from './transformToReal';
-import { $ } from '../utils/selector'
+import { $ } from './selector'
 import { getTransactionsTotal } from './transaction'
 
 const tbody = $('.extract__tbody');

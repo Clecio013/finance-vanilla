@@ -1,4 +1,4 @@
-import { $ } from './utils/selector'
+import { $ } from './scripts/selector'
 import { createTransaction, transactions } from './scripts/transaction';
 import render from './scripts/render'
 import './scripts/header';
