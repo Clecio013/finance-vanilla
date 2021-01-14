@@ -10,6 +10,10 @@ const render = {
   tr: transaction => {
     const tr = document.createElement('tr');
 
+    if (!transaction.value) {
+      return
+    }
+
     const line = `
       <tr>
         <td class='incomeOutcome'>${transaction.type === 'Venda' ? '+' : '-'}</td>
