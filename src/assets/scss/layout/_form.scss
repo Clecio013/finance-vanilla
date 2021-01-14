@@ -1,4 +1,16 @@
 .form {
+  .select {
+    color: $finance-color-grey-light;
+
+    &.default {
+      color: $finance-color-grey-light;
+    }
+
+    &.selected {
+      color: $finance-color-dark-secondary;
+    }
+  }
+
   .form__group {
     display: flex;
     flex-direction: column;

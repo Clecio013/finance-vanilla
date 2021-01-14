@@ -4,7 +4,7 @@ import { getTransactionsTotal } from './transaction'
 
 const tbody = $('.extract__tbody');
 const result = $('#total');
-const profitOrLoss = $('#profitOrLoss');
+const profitOrLoss = $('.extract__lossOrProfit');
 
 const render = {
   tr: transaction => {
