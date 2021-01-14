@@ -2,12 +2,15 @@ import { $ } from './scripts/selector'
 import { createTransaction, transactions } from './scripts/transaction';
 import render from './scripts/render'
 import './scripts/header';
+import { renderSelectOptions } from './scripts/select'
 
 import './assets/scss/main.scss';
 
 const form = $('form');
 
 window.addEventListener('load', () => {
+  renderSelectOptions();
+
   if (transactions.length > 0) {
     render.transactions(transactions);
   }
@@ -31,6 +34,7 @@ form.addEventListener('submit', event => {
   render.tr(transaction);
   render.createTotal(transactions);
 
-  name.value = null
-  value.value = null
+  name.value = null;
+  value.value = null;
+  renderSelectOptions();
 });

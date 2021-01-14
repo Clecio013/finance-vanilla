@@ -18,7 +18,11 @@
 .extract__tbody {
   span {
     display: block;
-    width: 60%;
+    width: 70%;
+
+    @include breakpoint('medium') {
+      width: 60%;
+    }
   }
   .incomeOutcome {
     text-align: center;
