@@ -13,8 +13,11 @@
   padding: $finance-spacing-internal-05;
 
   .header__logo {
+    width: 40px;
+
     @include breakpoint('large') {
       padding-right: $finance-spacing-internal-05;
+      width: 60px;
     }
   }
 
