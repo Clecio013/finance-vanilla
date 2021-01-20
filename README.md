@@ -2,6 +2,11 @@
     <img alt="Controle Financeiro" src=".github/mockup.jpg" width="100%" />
 </div>
 
+---
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/49c587eb-6b10-47b6-a41c-893d870e7c0c/deploy-status)](https://app.netlify.com/sites/finance-vanilla/deploys)
+
+
 ## 👨🏽‍💻 About the project
 
 This project was created based on challenge by [Via varejo](https://ri.viavarejo.com.br/) proposed by my leader Andreia Zambrana ❤️
