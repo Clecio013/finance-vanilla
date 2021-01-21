@@ -1,0 +1,62 @@
+.form {
+  .select {
+    color: $finance-color-grey-light;
+
+    &.default {
+      color: $finance-color-grey-light;
+    }
+
+    &.selected {
+      color: $finance-color-dark-secondary;
+    }
+  }
+
+  .form__group {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: $finance-spacing-internal-06;
+
+    &.button {
+      padding-bottom: $finance-spacing-internal-02;
+    }
+
+    @media screen and (min-width: $finance-breakpoint-medium) and (max-width: $finance-breakpoint-large) {
+      &:last-child {
+        grid-area: 2 / 2 / 3/ 4;
+        max-width: 60%;
+        margin-left: 60%;
+      }
+    }
+  }
+
+  .form__label {
+    color: #494949;
+    padding-bottom: $finance-spacing-internal-03;
+  }
+
+  .form__button {
+    background-color: $finance-color-dark;
+    color: $finance-color-light;
+    border: 0;
+    padding: $finance-spacing-internal-03;
+    border-radius: $finance-radius-01;
+  }
+
+  .form__input {
+    font-family: $finance-font-family;
+    font-size: 14px;
+    padding: 0.5rem;
+    border: 1px solid $finance-color-grey-light;
+    border-radius: 4px;
+
+    &::placeholder {
+      color: $finance-color-grey-light;
+    }
+  }
+
+  @media screen and (min-width: $finance-breakpoint-medium) and (max-width: $finance-breakpoint-large) {
+    display: grid;
+    grid-template-columns: 0.4fr 1fr 0.4fr;
+    grid-column-gap: $finance-spacing-internal-05;
+  }
+}

@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: $finance-font-family;
+  font-size: $finance-font-base;
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+.footer {
+  width: 100%;
+  height: 10px;
+  background-color: $finance-color-dark;
+}
