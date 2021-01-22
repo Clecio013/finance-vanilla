@@ -9,7 +9,7 @@
 
 ## 👨🏽‍💻 About the project
 
-This project was created based on challenge by [Via varejo](https://ri.viavarejo.com.br/) proposed by my leader Andreia Zambrana ❤️
+This project was created based on challenge by [Via varejo](https://ri.viavarejo.com.br/) proposed by my leader Andrea Zambrana ❤️
 
 ## 🚀 Technologies
 Technologies I used to create this project
